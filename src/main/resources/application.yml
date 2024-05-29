@@ -11,4 +11,8 @@ spring:
       registerWithEureka: false
       fetchRegistry: false
       serviceUrl:
-        defaultZone: http://${eureka.instance.hostname}:${server.port}/eureka/
+#        Avec Docker
+#        defaultZone: http://${eureka.instance.hostname}:${server.port}/eureka/
+#        Sans Docker
+        defaultZone: http://localhost:${server.port}/eureka/
+
